@@ -33,3 +33,16 @@ Syntax: Text.Replace(text as nullable text, old as text, new as text) as nullabl
   - old – The text that you want to replace.
   - new – The text that will replace the old text
  
+# Text.Length – Count the number of characters**
+
+# Text.Split – Split text into multiple parts** 
+
+# Text.Select – Extract specific characters from text** 
+
+# Number.FromText – Convert text to a number** 
+
+# Text.Lower – Convert text to lowercase** 
+
+# Text.Contains – Check if text contains a word**
+
+
