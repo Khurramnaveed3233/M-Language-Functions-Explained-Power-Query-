@@ -90,6 +90,8 @@ Output is 4
 
 Returns the result of converting all characters in text to lowercase. An optional culture may also be provided (for example, "en-US").
 
+Syntax: Text.Lower(text as nullable text, optional culture as nullable text) as nullable text
+
 Example: Get the lowercase version of "AbCd".
 
 ![tll](https://github.com/user-attachments/assets/8a388e99-36a9-4458-b544-9f4b9387dbdd)
