@@ -19,7 +19,7 @@ Power Query’s M Language is a powerful tool for transforming and cleaning data
 
 💡 Perfect for beginners and professionals looking to master Power Query
 
-# Text.Replace – Replace specific text in a string
+# 1. Text.Replace – Replace specific text in a string
  
 The Text. Replace function in Power Query replaces a specific part of a text string with new text. This function is useful for cleaning, modifying, or standardizing text data in Excel or Power BI.
 
@@ -33,7 +33,7 @@ Example: Replace every occurrence of "the" in a sentence with "a".
 
 ![tr2](https://github.com/user-attachments/assets/bf3b41a6-888a-4c7a-9a5f-69b690f518a9)
 
-# Text.Length – Count the number of characters
+# 2. Text.Length – Count the number of characters
 
 Returns the number of characters in the text text
 
@@ -45,7 +45,7 @@ Example 1 Find how many characters are in the text "Hello World".
 
 Output is 11
 
-# Text.Split – Split text into multiple parts
+# 3. Text.Split – Split text into multiple parts
 
 Returns a list of text values resulting from the splitting a text value text based on the specified delimiter, separator.
 
@@ -59,7 +59,7 @@ Output
 
 ![ts3](https://github.com/user-attachments/assets/e9f307d9-27b1-42f0-933a-b52d033c919a)
 
-# Text.Select – Extract specific characters from text 
+# 4. Text.Select – Extract specific characters from text 
 
 Returns a copy of the text value text with all the characters not in selectChars removed.
 
@@ -71,7 +71,7 @@ Example : Select all characters in the range of 'a' to 'z' from the text value.
 
 Output is "abc"
 
-# Number.FromText – Convert text to a number
+# 5. Number.FromText – Convert text to a number
 
 Returns a number value from the given text value, text.
 
@@ -86,7 +86,7 @@ Example:  Get the number value of "4".
 
 Output is 4
 
-# Text.Lower – Convert text to lowercase
+# 6. Text.Lower – Convert text to lowercase
 
 Returns the result of converting all characters in text to lowercase. An optional culture may also be provided (for example, "en-US").
 
@@ -98,7 +98,7 @@ Example: Get the lowercase version of "AbCd".
 
 Output is "abcd"
 
-# Text.Contains – Check if text contains a word
+# 7. Text.Contains – Check if text contains a word
 
 Detects whether text contains the value substring. Returns true if the value is found. This function doesn't support wildcards or regular expressions.
 
