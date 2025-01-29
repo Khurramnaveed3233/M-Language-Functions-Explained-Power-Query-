@@ -47,6 +47,16 @@ Output is 11
 
 # Text.Split – Split text into multiple parts** 
 
+Returns a list of text values resulting from the splitting a text value text based on the specified delimiter, separator.
+
+![ts](https://github.com/user-attachments/assets/1dce78aa-2c60-4a96-9c6c-a7e2d960a480)
+
+Example : Create a list from the "|" delimited text value "Name|Address|PhoneNumber".
+
+![ts2](https://github.com/user-attachments/assets/17016e6c-4f43-4229-948d-637feffc4a6e)
+
+
+
 # Text.Select – Extract specific characters from text** 
 
 # Number.FromText – Convert text to a number** 
