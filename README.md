@@ -55,9 +55,16 @@ Example : Create a list from the "|" delimited text value "Name|Address|PhoneNum
 
 ![ts2](https://github.com/user-attachments/assets/17016e6c-4f43-4229-948d-637feffc4a6e)
 
+Output
 
+![ts3](https://github.com/user-attachments/assets/e9f307d9-27b1-42f0-933a-b52d033c919a)
 
 # Text.Select – Extract specific characters from text** 
+
+
+
+
+
 
 # Number.FromText – Convert text to a number** 
 
