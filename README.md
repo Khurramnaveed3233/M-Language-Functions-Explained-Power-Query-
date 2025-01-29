@@ -19,7 +19,7 @@ Power Query’s M Language is a powerful tool for transforming and cleaning data
 
 💡 Perfect for beginners and professionals looking to master Power Query
 
-- **Text.Replace – Replace specific text in a string**
+# Text.Replace – Replace specific text in a string**
 
 📌 What Does It Do?
   
