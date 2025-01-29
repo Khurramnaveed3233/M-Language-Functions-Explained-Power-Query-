@@ -86,7 +86,7 @@ Example:  Get the number value of "4".
 
 Output is 4
 
-# Text.Lower – Convert text to lowercase** 
+# Text.Lower – Convert text to lowercase
 
 Returns the result of converting all characters in text to lowercase. An optional culture may also be provided (for example, "en-US").
 
@@ -98,7 +98,22 @@ Example: Get the lowercase version of "AbCd".
 
 Output is "abcd"
 
-# Text.Contains – Check if text contains a word**
+# Text.Contains – Check if text contains a word
+
+Detects whether text contains the value substring. Returns true if the value is found. This function doesn't support wildcards or regular expressions.
+
+The optional argument comparer can be used to specify case-insensitive or culture and locale-aware comparisons. The following built-in comparers are available in the formula language:
+
+   - Comparer.Ordinal: Used to perform a case-sensitive ordinal comparison
+   - Comparer.OrdinalIgnoreCase: Used to perform a case-insensitive ordinal comparison
+   - Comparer.FromCulture: Used to perform a culture-aware comparison
+
+If the first argument is null, this function returns null.
+
+All characters are treated literally. For example, "DR", " DR", "DR ", and " DR " aren't considered equal to each other.
+
+
+
 
 
 
