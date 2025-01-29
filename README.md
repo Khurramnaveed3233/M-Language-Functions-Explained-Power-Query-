@@ -19,7 +19,7 @@ Power Query’s M Language is a powerful tool for transforming and cleaning data
 
 💡 Perfect for beginners and professionals looking to master Power Query
 
-# Text.Replace – Replace specific text in a string**
+# Text.Replace – Replace specific text in a string
  
 The Text. Replace function in Power Query replaces a specific part of a text string with new text. This function is useful for cleaning, modifying, or standardizing text data in Excel or Power BI.
 
@@ -33,7 +33,7 @@ Example: Replace every occurrence of "the" in a sentence with "a".
 
 ![tr2](https://github.com/user-attachments/assets/bf3b41a6-888a-4c7a-9a5f-69b690f518a9)
 
-# Text.Length – Count the number of characters**
+# Text.Length – Count the number of characters
 
 Returns the number of characters in the text text
 
@@ -45,7 +45,7 @@ Example 1 Find how many characters are in the text "Hello World".
 
 Output is 11
 
-# Text.Split – Split text into multiple parts** 
+# Text.Split – Split text into multiple parts
 
 Returns a list of text values resulting from the splitting a text value text based on the specified delimiter, separator.
 
