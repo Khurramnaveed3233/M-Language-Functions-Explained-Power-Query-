@@ -75,15 +75,16 @@ Output is "abc"
 
 Returns a number value from the given text value, text.
 
+Syntax is a Number.FromText(text as nullable text, optional culture as nullable text) as nullable number
+
    - text: The textual representation of a number value. The representation must be in a common number format, such as "15", "3,423.10", or "5.0E-10".
    - culture: An optional culture that controls how text is interpreted (for example, "en-US").
 
+Example:  Get the number value of "4".
 
+![nf](https://github.com/user-attachments/assets/5a01f93d-7fb1-4ea5-91cd-6b029efb3011)
 
-
-
-
-
+Output is 4
 
 
 
