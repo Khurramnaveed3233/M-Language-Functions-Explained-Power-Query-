@@ -61,10 +61,15 @@ Output
 
 # Text.Select – Extract specific characters from text** 
 
+Returns a copy of the text value text with all the characters not in selectChars removed.
 
+![tss](https://github.com/user-attachments/assets/7453f86a-8f7d-4ed5-8703-4efd4aa14415)
 
+Example : Select all characters in the range of 'a' to 'z' from the text value.
 
+![tss1](https://github.com/user-attachments/assets/8ad2671d-b1ba-46f6-85df-6220adf24b34)
 
+Output is "abc"
 
 # Number.FromText – Convert text to a number** 
 
