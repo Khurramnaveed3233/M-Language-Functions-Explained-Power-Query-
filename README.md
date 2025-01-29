@@ -59,7 +59,7 @@ Output
 
 ![ts3](https://github.com/user-attachments/assets/e9f307d9-27b1-42f0-933a-b52d033c919a)
 
-# Text.Select – Extract specific characters from text** 
+# Text.Select – Extract specific characters from text 
 
 Returns a copy of the text value text with all the characters not in selectChars removed.
 
@@ -71,7 +71,22 @@ Example : Select all characters in the range of 'a' to 'z' from the text value.
 
 Output is "abc"
 
-# Number.FromText – Convert text to a number** 
+# Number.FromText – Convert text to a number
+
+Returns a number value from the given text value, text.
+
+   - text: The textual representation of a number value. The representation must be in a common number format, such as "15", "3,423.10", or "5.0E-10".
+   - culture: An optional culture that controls how text is interpreted (for example, "en-US").
+
+
+
+
+
+
+
+
+
+
 
 # Text.Lower – Convert text to lowercase** 
 
