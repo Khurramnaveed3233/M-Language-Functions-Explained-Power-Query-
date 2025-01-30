@@ -117,12 +117,31 @@ All characters are treated literally. For example, "DR", " DR", "DR ", and " DR 
 1. SUBSTRING
 SUBSTRING kisi bhi string (matlab text) ka ek hissa (part) nikalne ke liye use hota hai.
 
-Syntax :   ![S1](https://github.com/user-attachments/assets/e5e7ec4f-67f7-4584-a8f3-513ad779a8b1)
+Syntax :  
+![S1](https://github.com/user-attachments/assets/e5e7ec4f-67f7-4584-a8f3-513ad779a8b1)
 
    - string: Jis text se hissa nikalna hai
    - start_position: Kahan se start karna hai
    - length: Kitne characters lene hain
 
-Example : ![s2](https://github.com/user-attachments/assets/6727ad7c-5359-49d8-b811-b256d0dce568)
+Example : 
+![s2](https://github.com/user-attachments/assets/6727ad7c-5359-49d8-b811-b256d0dce568)
 
 Output: Ka
+
+2. CHARINDEX
+CHARINDEX kisi bhi character ya word ki position dhoondhne ke liye use hota hai.
+
+Syntax:
+![c1](https://github.com/user-attachments/assets/f5829f16-9191-43a7-b09a-23ddec34969c)
+
+   - substring: Jis word ya letter ki position chahiye
+   - string: Puri line ya text jis men search karna hai
+
+🔹 Example:
+![c2](https://github.com/user-attachments/assets/d076603c-93bb-4c6e-a786-b243fb36aaa4)
+
+Output: 9 (Matlab "Ka" ka pehla letter 9th position par hai)
+
+
+
