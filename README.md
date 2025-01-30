@@ -163,28 +163,34 @@ STRING_SPLIT kisi bhi comma-separated ya space-separated string ko tod kar alag-
 
 🔹 Example: 
 
-![ss](https://github.com/user-attachments/assets/c4273d68-9325-4ec7-9b87-f6fe219c53ac)
-
-💡 Output:
-
-![ss1](https://github.com/user-attachments/assets/0a2f7314-63f2-4868-91e0-cf3d34f0f95a)
-
+    - SELECT value FROM STRING_SPLIT('Apple,Banana,Orange, ',');
+    - Output: Apple
+              Banana
+              Orange
+              
 Yani, ek string ko list me tod diya!
+
+
+
+
+
+
+
 
 2. CROSS APPLY
 CROSS APPLY ek table function (STRING_SPLIT jese) ko apply karne ke liye use hota hai. Jab ek column me multiple values (comma-separated) hon, to ye har row ke liye STRING_SPLIT ko apply karta hai.
 
 🔹 Example: Agar ek table ho:
 
-![ca](https://github.com/user-attachments/assets/4c75e1d1-e346-41e4-b0c5-9b7093fdf959)
 
-Ab har fruit ko alag row me dikhane ke liye:
 
-![ca2](https://github.com/user-attachments/assets/7167621b-096e-4f09-ac61-ac5d5e5ee2de)
 
-💡 Output:
 
-![ca3](https://github.com/user-attachments/assets/d0a81347-c49b-42f6-b8f1-073fd066936a)
+
+
+
+
+
 
 Samajhne ka Asan Tareeqa
 
