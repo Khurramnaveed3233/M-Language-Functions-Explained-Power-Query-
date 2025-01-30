@@ -23,68 +23,73 @@ Power Query’s M Language is a powerful tool for transforming and cleaning data
  
 The Text. Replace function in Power Query replaces a specific part of a text string with new text. This function is useful for cleaning, modifying, or standardizing text data in Excel or Power BI.
 
-Syntax: Text.Replace(text as nullable text, old as text, new as text) as nullable text
-
-![tr](https://github.com/user-attachments/assets/2cd06520-05b0-4934-8e11-5e129c392e9d)
+    Syntax: Text.Replace(text as nullable text, old as text, new as text) as nullable text
 
 Returns the result of replacing all occurrences of text value old in text value text with text value new. This function is case-sensitive.
 
 Example: Replace every occurrence of "the" in a sentence with "a".
 
-![tr2](https://github.com/user-attachments/assets/bf3b41a6-888a-4c7a-9a5f-69b690f518a9)
+    Text.Replace("the quick brown fox jumps over the lazy dog", "the", "a")
+    
+    Output : "a quick brown fox jumps over a lazy dog"
+
 
 # 2. Text.Length – Count the number of characters
 
 Returns the number of characters in the text text
 
-![tl](https://github.com/user-attachments/assets/74f6981e-4417-4d70-8155-b027af842086)
+    The syntax is:  Text.Length(text as nullable text) as nullable number
 
 Example 1 Find how many characters are in the text "Hello World".
 
-![tl2](https://github.com/user-attachments/assets/cd5600da-cec9-4ea3-9826-01e63203a822)
+    Text.Length("Hello World")
 
-Output is 11
+    Output is 11
 
 # 3. Text.Split – Split text into multiple parts
 
 Returns a list of text values resulting from the splitting a text value text based on the specified delimiter, separator.
 
-![ts](https://github.com/user-attachments/assets/1dce78aa-2c60-4a96-9c6c-a7e2d960a480)
+    Text.Split(text as text, separator as text) as list
 
 Example : Create a list from the "|" delimited text value "Name|Address|PhoneNumber".
 
-![ts2](https://github.com/user-attachments/assets/17016e6c-4f43-4229-948d-637feffc4a6e)
+    Text.Split("Name|Address|PhoneNumber", "|")
 
 Output
 
-![ts3](https://github.com/user-attachments/assets/e9f307d9-27b1-42f0-933a-b52d033c919a)
+    {
+    "Name",
+    "Address",
+    "PhoneNumber"
+    }
 
 # 4. Text.Select – Extract specific characters from text 
 
 Returns a copy of the text value text with all the characters not in selectChars removed.
 
-![tss](https://github.com/user-attachments/assets/7453f86a-8f7d-4ed5-8703-4efd4aa14415)
+    Syntax: Text.Select(text as nullable text, selectChars as any) as nullable text
 
-Example : Select all characters in the range of 'a' to 'z' from the text value.
+Example: Select all characters in the range of 'a' to 'z' from the text value.
 
-![tss1](https://github.com/user-attachments/assets/8ad2671d-b1ba-46f6-85df-6220adf24b34)
+    Text.Select("a,b;c", {"a".."z"})
 
-Output is "abc"
+    Output is "ABC
 
 # 5. Number.FromText – Convert text to a number
 
 Returns a number value from the given text value, text.
 
-Syntax is a Number.FromText(text as nullable text, optional culture as nullable text) as nullable number
+      Syntax is a Number.FromText(text as nullable text, optional culture as nullable text) as nullable number
 
-   - text: The textual representation of a number value. The representation must be in a common number format, such as "15", "3,423.10", or "5.0E-10".
-   - culture: An optional culture that controls how text is interpreted (for example, "en-US").
+      text: The textual representation of a number value. The representation must be in a common number format, such as "15", "3,423.10", or "5.0E-10".
+      culture: An optional culture that controls how text is interpreted (for example, "en-US").
 
 Example:  Get the number value of "4".
 
-![nf](https://github.com/user-attachments/assets/5a01f93d-7fb1-4ea5-91cd-6b029efb3011)
+    Number.FromText("4")
 
-Output is 4
+    Output is 4
 
 # 6. Text.Lower – Convert text to lowercase
 
@@ -94,9 +99,9 @@ Syntax: Text.Lower(text as nullable text, optional culture as nullable text) as 
 
 Example: Get the lowercase version of "AbCd".
 
-![tll](https://github.com/user-attachments/assets/8a388e99-36a9-4458-b544-9f4b9387dbdd)
+    Text.Lower("AbCd")
 
-Output is "abcd"
+    Output is "abcd"
 
 # 7. Text.Contains – Check if text contains a word
 
@@ -112,6 +117,14 @@ If the first argument is null, this function returns null.
 
 All characters are treated literally. For example, "DR", " DR", "DR ", and " DR " aren't considered equal to each other.
 
+    Syntax: Text.Contains(text as nullable text, substring as text, optional comparer as nullable function) as nullable logical
+
+Example: Find if the text "Hello World" contains "Hello".
+
+    Text.Contains("Hello World", "Hello")
+
+    Output = true
+    
 # SQL Server: SUBSTRING aur CHARINDEX Kya Hain?
 
 1. SUBSTRING
