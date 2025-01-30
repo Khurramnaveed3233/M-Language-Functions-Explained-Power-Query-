@@ -143,5 +143,14 @@ Syntax:
 
 Output: 9 (Matlab "Ka" ka pehla letter 9th position par hai)
 
+Dono ko sath use karna
+
+Ab hum CHARINDEX se position nikalenge aur SUBSTRING se us word ko extract karenge.
+
+🔹 Example: SELECT SUBSTRING('Hidayat Ka Safar', CHARINDEX('Ka', 'Hidayat Ka Safar'), 2) AS Result;
+
+💡 Output: Ka
+Is tarah hum kisi bhi text se dynamically word ya phrase nikal sakte hain! 🚀
+
 
 
