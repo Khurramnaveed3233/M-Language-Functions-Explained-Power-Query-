@@ -117,15 +117,17 @@ All characters are treated literally. For example, "DR", " DR", "DR ", and " DR 
 1.SUBSTRING
 SUBSTRING kisi bhi string (matlab text) ka ek hissa (part) nikalne ke liye use hota hai.
 
-Syntax: SUBSTRING(string, start_position, length)
+Syntax: 
 
+    - SUBSTRING(string, start_position, length)
+    
     - string: Jis text se hissa nikalna hai
     - start_position: Kahan se start karna hai
     - length: Kitne characters lene hain
  
 Example:SELECT SUBSTRING('Hidayat Ka Safar', 9, 2) AS Result;
 
-💡 Output: Ka
+    - Output: Ka
 
 2.CHARINDEX
    
@@ -133,24 +135,25 @@ CHARINDEX kisi bhi character ya word ki position dhoondhne ke liye use hota hai.
 
 Syntax:
 
-![c1](https://github.com/user-attachments/assets/f5829f16-9191-43a7-b09a-23ddec34969c)
+    - CHARINDEX(substring, string)
 
-   - substring: Jis word ya letter ki position chahiye
-   - string: Puri line ya text jis men search karna hai
+    - substring: Jis word ya letter ki position chahiye
+    - string: Puri line ya text jis men search karna hai
 
 🔹 Example:
 
-![c2](https://github.com/user-attachments/assets/d076603c-93bb-4c6e-a786-b243fb36aaa4)
+    - SELECT CHARINDEX('Ka', 'Hidayat Ka Safar') AS Position;
 
-Output: 9 (Matlab "Ka" ka pehla letter 9th position par hai)
+    - Output: 9 (Matlab "Ka" ka pehla letter 9th position par hai)
 
 Dono ko sath use karna
 
 Ab hum CHARINDEX se position nikalenge aur SUBSTRING se us word ko extract karenge.
 
-🔹 Example: SELECT SUBSTRING('Hidayat Ka Safar', CHARINDEX('Ka', 'Hidayat Ka Safar'), 2) AS Result;
+    - Example: SELECT SUBSTRING('Hidayat Ka Safar', CHARINDEX('Ka', 'Hidayat Ka Safar'), 2) AS Result;
 
-💡 Output: Ka
+    - Output: Ka
+    
 Is tarah hum kisi bhi text se dynamically word ya phrase nikal sakte hain! 🚀
 
 # SQL Server: CROSS APPLY aur STRING_SPLIT kya hain?
