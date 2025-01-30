@@ -114,7 +114,7 @@ All characters are treated literally. For example, "DR", " DR", "DR ", and " DR 
 
 # SQL Server: SUBSTRING aur CHARINDEX Kya Hain?
 
-1. SUBSTRING
+1.SUBSTRING
 SUBSTRING kisi bhi string (matlab text) ka ek hissa (part) nikalne ke liye use hota hai.
 
 Syntax: SUBSTRING(string, start_position, length)
@@ -127,8 +127,7 @@ Example:SELECT SUBSTRING('Hidayat Ka Safar', 9, 2) AS Result;
 
 💡 Output: Ka
 
-
-CHARINDEX
+2.CHARINDEX
    
 CHARINDEX kisi bhi character ya word ki position dhoondhne ke liye use hota hai.
 
