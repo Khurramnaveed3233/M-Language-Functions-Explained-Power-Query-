@@ -119,7 +119,7 @@ Syntax: SUBSTRING(string_name, start_position, end_position)
 
    - start_position: The index where the extraction begins.
    - end_position: The index up to which the extraction continues
-   - 
+
 Handle Edge Cases:
 
    - If end_position is greater than or equal to the length of string_name, it returns an empty substring.
