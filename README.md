@@ -114,21 +114,18 @@ All characters are treated literally. For example, "DR", " DR", "DR ", and " DR 
 
 # SQL Server: SUBSTRING aur CHARINDEX Kya Hain?
 
+1. SUBSTRING
 SUBSTRING kisi bhi string (matlab text) ka ek hissa (part) nikalne ke liye use hota hai.
-Syntax: SUBSTRING(string_name, start_position, end_position)
 
-   - start_position: The index where the extraction begins.
-   - end_position: The index up to which the extraction continues
+Syntax: SUBSTRING(string, start_position, length)
 
-Handle Edge Cases:
+    - string: Jis text se hissa nikalna hai
+    - start_position: Kahan se start karna hai
+    - length: Kitne characters lene hain
+ 
+Example:SELECT SUBSTRING('Hidayat Ka Safar', 9, 2) AS Result;
 
-   - If end_position is greater than or equal to the length of string_name, it returns an empty substring.
-   - If end_position equals the length, it also returns an empty substring.
-   - If start_position is zero and exceeds the string length, return an empty substring.
-
-![sub](https://github.com/user-attachments/assets/994cfbbc-228d-4f6a-b067-249a963d794e)
-
-By following these steps and understanding the edge cases, you can reliably use the SUBSTRING function in your SQL queries.
+💡 Output: Ka
 
 
 CHARINDEX
