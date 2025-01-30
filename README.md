@@ -175,9 +175,9 @@ CROSS APPLY ek table function (STRING_SPLIT jese) ko apply karne ke liye use hot
 
 🔹 Example: Agar ek table ho:
 
-    ID	  Fruits
-    1	   Apple, Banana
-    2 	  Orange,Mango
+    ID	      Fruits
+    1	       Apple, Banana
+    2 	      Orange, Mango
     
 Ab har fruit ko alag row me dikhane ke liye:
 
