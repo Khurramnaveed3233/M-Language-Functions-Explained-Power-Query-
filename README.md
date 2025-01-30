@@ -152,5 +152,43 @@ Ab hum CHARINDEX se position nikalenge aur SUBSTRING se us word ko extract karen
 💡 Output: Ka
 Is tarah hum kisi bhi text se dynamically word ya phrase nikal sakte hain! 🚀
 
+# SQL Server: CROSS APPLY aur STRING_SPLIT kya hain?
+
+1. STRING_SPLIT
+STRING_SPLIT kisi bhi comma-separated ya space-separated string ko tod kar alag-alag rows me convert karne ke liye use hota hai.
+
+🔹 Example: 
+
+![ss](https://github.com/user-attachments/assets/c4273d68-9325-4ec7-9b87-f6fe219c53ac)
+
+💡 Output:
+
+![ss1](https://github.com/user-attachments/assets/0a2f7314-63f2-4868-91e0-cf3d34f0f95a)
+
+Yani, ek string ko list me tod diya!
+
+2. CROSS APPLY
+CROSS APPLY ek table function (STRING_SPLIT jese) ko apply karne ke liye use hota hai. Jab ek column me multiple values (comma-separated) hon, to ye har row ke liye STRING_SPLIT ko apply karta hai.
+
+🔹 Example: Agar ek table ho:
+
+![ca](https://github.com/user-attachments/assets/4c75e1d1-e346-41e4-b0c5-9b7093fdf959)
+
+Ab har fruit ko alag row me dikhane ke liye:
+
+![ca2](https://github.com/user-attachments/assets/7167621b-096e-4f09-ac61-ac5d5e5ee2de)
+
+💡 Output:
+
+![ca3](https://github.com/user-attachments/assets/d0a81347-c49b-42f6-b8f1-073fd066936a)
+
+Samajhne ka Asan Tareeqa
+
+  - STRING_SPLIT sirf ek string ko todta hai.
+  - CROSS APPLY ise har row ke liye apply karta hai.
+  - Iska use tab hota hai jab ek column me multiple values hon, aur hume har value ko alag row me dikhana ho.
+  - Agar database me comma-separated data ho, to ye trick bahut kaam ki hai! 🚀
+
+
 
 
