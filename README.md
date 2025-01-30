@@ -23,7 +23,7 @@ Power Query’s M Language is a powerful tool for transforming and cleaning data
  
 The Text. Replace function in Power Query replaces a specific part of a text string with new text. This function is useful for cleaning, modifying, or standardizing text data in Excel or Power BI.
 
-    Syntax: Text.Replace(text as nullable text, old as text, new as text) as nullable text
+    The syntax is: Text.Replace(text as nullable text, old as text, new as text) as nullable text
 
 Returns the result of replacing all occurrences of text value old in text value text with text value new. This function is case-sensitive.
 
