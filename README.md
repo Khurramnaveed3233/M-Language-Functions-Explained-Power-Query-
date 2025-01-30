@@ -29,7 +29,7 @@ Returns the result of replacing all occurrences of text value old in text value 
 
 Example: Replace every occurrence of "the" in a sentence with "a".
 
-    Text.Replace("the quick brown fox jumps over the lazy dog", "the", "a")
+    The syntax is: Text.Replace("the quick brown fox jumps over the lazy dog", "the", "a")
     
     Output : "a quick brown fox jumps over a lazy dog"
 
@@ -42,7 +42,7 @@ Returns the number of characters in the text text
 
 Example 1 Find how many characters are in the text "Hello World".
 
-    Text.Length("Hello World")
+    The syntax is: Text.Length("Hello World")
 
     Output is 11
 
@@ -50,7 +50,7 @@ Example 1 Find how many characters are in the text "Hello World".
 
 Returns a list of text values resulting from the splitting a text value text based on the specified delimiter, separator.
 
-    Text.Split(text as text, separator as text) as list
+    The syntax is: Text.Split(text as text, separator as text) as list
 
 Example : Create a list from the "|" delimited text value "Name|Address|PhoneNumber".
 
@@ -68,7 +68,7 @@ Output
 
 Returns a copy of the text value text with all the characters not in selectChars removed.
 
-    Syntax: Text.Select(text as nullable text, selectChars as any) as nullable text
+    The syntax is: Text.Select(text as nullable text, selectChars as any) as nullable text
 
 Example: Select all characters in the range of 'a' to 'z' from the text value.
 
@@ -80,7 +80,7 @@ Example: Select all characters in the range of 'a' to 'z' from the text value.
 
 Returns a number value from the given text value, text.
 
-      Syntax is a Number.FromText(text as nullable text, optional culture as nullable text) as nullable number
+      The syntax is: Number.FromText(text as nullable text, optional culture as nullable text) as nullable number
 
       text: The textual representation of a number value. The representation must be in a common number format, such as "15", "3,423.10", or "5.0E-10".
       culture: An optional culture that controls how text is interpreted (for example, "en-US").
@@ -95,7 +95,7 @@ Example:  Get the number value of "4".
 
 Returns the result of converting all characters in text to lowercase. An optional culture may also be provided (for example, "en-US").
 
-Syntax: Text.Lower(text as nullable text, optional culture as nullable text) as nullable text
+    The syntax is: Text.Lower(text as nullable text, optional culture as nullable text) as nullable text
 
 Example: Get the lowercase version of "AbCd".
 
@@ -117,7 +117,7 @@ If the first argument is null, this function returns null.
 
 All characters are treated literally. For example, "DR", " DR", "DR ", and " DR " aren't considered equal to each other.
 
-    Syntax: Text.Contains(text as nullable text, substring as text, optional comparer as nullable function) as nullable logical
+    The syntax is: Text.Contains(text as nullable text, substring as text, optional comparer as nullable function) as nullable logical
 
 Example: Find if the text "Hello World" contains "Hello".
 
