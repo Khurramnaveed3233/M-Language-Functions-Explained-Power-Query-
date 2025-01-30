@@ -135,24 +135,24 @@ CHARINDEX kisi bhi character ya word ki position dhoondhne ke liye use hota hai.
 
 Syntax:
 
-    - CHARINDEX(substring, string)
+      CHARINDEX(substring, string)
 
-    - substring: Jis word ya letter ki position chahiye
-    - string: Puri line ya text jis men search karna hai
+      substring: Jis word ya letter ki position chahiye
+      string: Puri line ya text jis men search karna hai
 
 🔹 Example:
 
-    - SELECT CHARINDEX('Ka', 'Hidayat Ka Safar') AS Position;
+      SELECT CHARINDEX('Ka', 'Hidayat Ka Safar') AS Position;
 
-    - Output: 9 (Matlab "Ka" ka pehla letter 9th position par hai)
+      Output: 9 (Matlab "Ka" ka pehla letter 9th position par hai)
 
 Dono ko sath use karna
 
 Ab hum CHARINDEX se position nikalenge aur SUBSTRING se us word ko extract karenge.
 
-    - Example: SELECT SUBSTRING('Hidayat Ka Safar', CHARINDEX('Ka', 'Hidayat Ka Safar'), 2) AS Result;
+      Example: SELECT SUBSTRING('Hidayat Ka Safar', CHARINDEX('Ka', 'Hidayat Ka Safar'), 2) AS Result;
 
-    - Output: Ka
+      Output: Ka
     
 Is tarah hum kisi bhi text se dynamically word ya phrase nikal sakte hain! 🚀
 
@@ -163,35 +163,33 @@ STRING_SPLIT kisi bhi comma-separated ya space-separated string ko tod kar alag-
 
 🔹 Example: 
 
-    - SELECT value FROM STRING_SPLIT('Apple,Banana,Orange, ',');
-    - Output: Apple
+      SELECT value FROM STRING_SPLIT('Apple,Banana,Orange, ',');
+      Output: Apple
               Banana
               Orange
               
 Yani, ek string ko list me tod diya!
-
-
-
-
-
-
-
 
 2. CROSS APPLY
 CROSS APPLY ek table function (STRING_SPLIT jese) ko apply karne ke liye use hota hai. Jab ek column me multiple values (comma-separated) hon, to ye har row ke liye STRING_SPLIT ko apply karta hai.
 
 🔹 Example: Agar ek table ho:
 
+    ID	Fruits
+    1	 Apple, Banana
+    2 	Orange ,Mango
+    
+Ab har fruit ko alag row me dikhane ke liye:
 
+    SELECT ID, value AS Fruit FROM MyTable  CROSS APPLY STRING_SPLIT(Fruits, ',');
 
+Output: 
 
-
-
-
-
-
-
-
+    1	Apple
+    1	Banana
+    2	Orange
+    2	Mango
+    
 Samajhne ka Asan Tareeqa
 
   - STRING_SPLIT sirf ek string ko todta hai.
@@ -199,6 +197,6 @@ Samajhne ka Asan Tareeqa
   - Iska use tab hota hai jab ek column me multiple values hon, aur hume har value ko alag row me dikhana ho.
   - Agar database me comma-separated data ho, to ye trick bahut kaam ki hai! 🚀
 
-
+Agar database me comma-separated data ho, to ye trick bahut kaam ki hai! 🚀
 
 
