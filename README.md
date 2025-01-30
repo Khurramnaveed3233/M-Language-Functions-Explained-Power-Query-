@@ -130,7 +130,9 @@ Handle Edge Cases:
 
 By following these steps and understanding the edge cases, you can reliably use the SUBSTRING function in your SQL queries.
 
+
 2. CHARINDEX
+   
 CHARINDEX kisi bhi character ya word ki position dhoondhne ke liye use hota hai.
 
 Syntax:
@@ -140,6 +142,7 @@ Syntax:
    - string: Puri line ya text jis men search karna hai
 
 🔹 Example:
+
 ![c2](https://github.com/user-attachments/assets/d076603c-93bb-4c6e-a786-b243fb36aaa4)
 
 Output: 9 (Matlab "Ka" ka pehla letter 9th position par hai)
