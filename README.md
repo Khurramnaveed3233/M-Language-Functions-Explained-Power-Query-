@@ -175,10 +175,8 @@ CROSS APPLY ek table function (STRING_SPLIT jese) ko apply karne ke liye use hot
 
 🔹 Example: Agar ek table ho:
 
-     ID Fruits
-     1	 Apple,Banana
-     2  Orange,Mango
-    
+![T](https://github.com/user-attachments/assets/6411bbd7-cd7c-4fbe-b901-69b95a285791)
+
 Ab har fruit ko alag row me dikhane ke liye:
 
     SELECT ID, value AS Fruit FROM MyTable  CROSS APPLY STRING_SPLIT(Fruits, ',');
