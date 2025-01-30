@@ -131,11 +131,12 @@ Handle Edge Cases:
 By following these steps and understanding the edge cases, you can reliably use the SUBSTRING function in your SQL queries.
 
 
-2. CHARINDEX
+CHARINDEX
    
 CHARINDEX kisi bhi character ya word ki position dhoondhne ke liye use hota hai.
 
 Syntax:
+
 ![c1](https://github.com/user-attachments/assets/f5829f16-9191-43a7-b09a-23ddec34969c)
 
    - substring: Jis word ya letter ki position chahiye
