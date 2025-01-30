@@ -112,9 +112,17 @@ If the first argument is null, this function returns null.
 
 All characters are treated literally. For example, "DR", " DR", "DR ", and " DR " aren't considered equal to each other.
 
+# SQL Server: SUBSTRING aur CHARINDEX Kya Hain?
 
+1. SUBSTRING
+SUBSTRING kisi bhi string (matlab text) ka ek hissa (part) nikalne ke liye use hota hai.
 
+Syntax : ![S1](https://github.com/user-attachments/assets/35e31b58-c121-429e-81e9-4398a3018eb0)
 
+   - string: Jis text se hissa nikalna hai
+   - start_position: Kahan se start karna hai
+   - length: Kitne characters lene hain
 
+Example : ![s2](https://github.com/user-attachments/assets/78ef8e5a-5de5-47e6-8ba4-6be8d9bfc4dc)
 
-
+Output: Ka
