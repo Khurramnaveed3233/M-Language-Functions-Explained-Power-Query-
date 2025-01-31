@@ -210,4 +210,21 @@ Samajhne ka Asan Tareeqa
 
 Agar database me comma-separated data ho, to ye trick bahut kaam ki hai! 🚀
 
+# Normalization and Denormalization 
+
+Normalization: A Cleanse Database Through Duplicates and Redundancies
+
+Normalization is a database normalization process aimed at minimizing redundancy and eliminating duplicates. It ensures that the database tables are clean, reducing data duplication and improving data integrity.
+
+   - Removing Redundancy: When a table contains multiple entries for the same information across different records, it indicates unnecessary redundancy. For example, if two customers 
+     have the same customer ID due to duplicate entries in the "Customer" table, normalization eliminates this duplication by ensuring each customer ID is unique.
+
+   - Eliminating Duplicates: Duplicates within a single table can cause issues when querying data. By normalizing tables, we remove such duplicates, making it easier to retrieve 
+     specific information without redundancy.
+
+   - Maintaining Relationships: Normalization ensures that all relationships between data are accurately represented in the database schema. This helps in maintaining the integrity of 
+     data and avoids scenarios where two or more records should be identical but are not.
+
+     
+
 
