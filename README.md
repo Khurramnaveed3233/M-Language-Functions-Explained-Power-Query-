@@ -240,3 +240,29 @@ Denormalization is the inverse process of normalization. Instead of removing red
 
 In summary, normalization cleans up databases by removing redundancies and eliminating duplicates, while denormalization brings normalized tables back into their original form, maintaining existing data integrity. Both processes work together toward creating a well-organized and efficient database structure.
 
+Normalization and denormalization are key concepts in database design that help manage redundancy and ensure data integrity. Here's a clearer explanation using tables as an example:
+
+Basic Table Structure:
+
+    Consider a simple "Students" table with columns: ID, Name, Age, Subject, Grade
+
+Normalization Process:
+
+    Objective: Eliminate redundancy by ensuring each field represents a single piece of information.
+    Example: Split the "Subject" column into separate tables for each subject area (e.g., Mathematics, Physics).
+    This creates normalized sub-tables where each table focuses on one specific aspect of data without duplicating information across columns.
+
+Denormalization Process:
+
+    Objective: Reinsert normalized tables back into their original form.
+    Example: Bring these normalized sub-tables back into the "Students" table, possibly by combining IDs from different tables to maintain consistency and accuracy.
+
+Data Integrity and Relationships:
+
+    Ensure that relationships (e.g., between subjects and grades) are maintained across all tables, both in their normalized form and when re-established.
+    During denormalization, verify that data flows correctly without introducing errors caused by migration.
+
+Conclusion:
+
+    Normalization helps manage redundancy, while denormalization ensures data integrity and consistency when moving from normalized to original table structures.
+    Through these examples, normalization and denormalization become more approachable concepts, demonstrating how they maintain data integrity and structure in database design.
