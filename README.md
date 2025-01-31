@@ -225,6 +225,18 @@ Normalization is a database normalization process aimed at minimizing redundancy
    - Maintaining Relationships: Normalization ensures that all relationships between data are accurately represented in the database schema. This helps in maintaining the integrity of 
      data and avoids scenarios where two or more records should be identical but are not.
 
-     
+Denormalization: Rebuilding Cleaned Tables
 
+Denormalization is the inverse process of normalization. Instead of removing redundant entries, denormalization re-expands normalized tables into their original form with additional columns that capture all possible relationships between data in multiple tables.    
+
+   - Recreating Tables: After normalizing a database by splitting it into separate tables, denormalization involves adding new tables or modifying existing ones to include all 
+     necessary information from the normalized tables.
+
+   - Maintaining Existing Data: Denormalization ensures that all original data remains intact in its original form, allowing for easy querying of specific details without needing to 
+     reprocess entire tables each time a change is made.
+
+   - Flexibility and Organization: By reorganizing data into separate tables, denormalization provides flexibility for future expansions or additions. This approach keeps the database 
+     clean and organized, making it easier to manage and extend as needed.
+
+In summary, normalization cleans up databases by removing redundancies and eliminating duplicates, while denormalization brings normalized tables back into their original form, maintaining existing data integrity. Both processes work together toward creating a well-organized and efficient database structure.
 
